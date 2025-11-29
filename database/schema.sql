@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS people_manager_db
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+USE people_manager_db;
+
+-- Tabela de pessoas
+CREATE TABLE IF NOT EXISTS pessoas (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(150) NOT NULL,
+  cpf VARCHAR(14) NOT NULL UNIQUE,
+  idade TINYINT UNSIGNED NOT NULL,
+  data_criacao DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB
+  DEFAULT CHARSET = utf8mb4
+  COLLATE = utf8mb4_unicode_ci;
