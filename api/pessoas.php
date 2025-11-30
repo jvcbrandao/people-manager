@@ -1,5 +1,6 @@
 <?php
 header("Content-Type: application/json; charset=UTF-8");
+require __DIR__ . '/cors.php';
 require __DIR__ . '/config/db.php';
 
 $method = $_SERVER['REQUEST_METHOD'];
