@@ -15,6 +15,12 @@ header {
   padding-bottom: 1rem;
 }
 
+main {
+  margin-bottom: 2rem;
+}
+body {
+  background-color: #f9fafb;
+}
 h1 {
   font-size: 2.5rem;
 }
@@ -28,7 +34,7 @@ h2 {
   padding: 1.5rem 2rem;
   border: 1px solid #ccc;
   border-radius: 0.75rem;
-  background-color: #f9fafb;
+  background-color: #fff;
 }
 
 #cadastrarUsuario {
@@ -110,6 +116,7 @@ footer {
   width: 60%;
   margin: auto;
   border-color: #2e3846;
+  background-color: #fff;
 }
 tr {
   border: solid 1px #2e3846;
@@ -124,4 +131,32 @@ tr {
 .msgErro {
   color: red;
   font-weight: 700;
+}
+
+.buscaCpfContainer {
+  width: 60%;
+  margin: 2rem auto;
+  border: 1px solid #2e3846;
+  min-height: 1.5rem;
+  font-size: 0.9rem;
+  border-radius: 0.4rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.buscaCpfContainer > label {
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.buscaCpfContainer > input {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+}
+
+.buscaCpfContainer > button {
+  align-items: end;
 }

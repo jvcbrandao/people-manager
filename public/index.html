@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
     <title>People Manager</title>
   </head>
@@ -32,18 +33,20 @@
       <input type="number" id="idade" name="idade" min="0" required />
     </div>
 
-    <div class="buttonContainer">
-      <button type="submit" id="salvarInfo" class="btnPrimario">Salvar</button>
-      <button type="reset" class="btnSecundario">Limpar</button>
-    </div>
-
+  <div class="buttonContainer">
+    <button type="submit" id="salvarInfo" class="btnPrimario">Salvar</button>
+    <button type="reset" class="btnSecundario">Limpar</button>
+  </div>
   </form>
 
-  <div id="messageContainer">
-    
-  </div>
+  <div id="messageContainer"></div>
 </fieldset>
 
+<!-- <div class="buscaCpfContainer">
+    <label for="buscaCpf">Buscar por CPF:</label>
+    <input type="text" name="buscaCpf" id="buscaCpf" class="inputBuscaCpf" placeholder="Digite o CPF sem pontos ou traços">
+    <button id="pesquisarCpf" class="btnPrimario">Filtrar</button>
+</div> -->
 
       <div id="listaUsuarios">
         <table id="tableUsuarios">
