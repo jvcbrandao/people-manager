@@ -17,6 +17,7 @@ header {
 
 main {
   margin-bottom: 2rem;
+  width: 100%;
 }
 body {
   background-color: #f9fafb;
@@ -129,8 +130,6 @@ footer p {
   font-size: 0.9rem;
 }
 
-
-
 tr {
   border: solid 1px #2e3846;
   height: 3rem;
@@ -183,8 +182,178 @@ tr {
   background-color: #fff;
 }
 
-#tableUsuarios:nth-child(even){
+#tableUsuarios:nth-child(even) {
   background-color: #ccc;
 }
 
+@media (max-width: 480px) {
+  header {
+    height: auto;
+    padding: 1rem;
+  }
 
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  #containerForm {
+    padding: 1rem;
+    margin: 1rem;
+    width: 90%;
+  }
+
+  #cadastrarUsuario .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btnPrimario,
+  .btnSecundario,
+  .btnTerciario {
+    width: 100%;
+    margin-bottom: 0.4rem;
+  }
+
+  #listaUsuarios {
+    margin-top: 1rem;
+    padding: 0 1rem;
+  }
+
+  #tableUsuarios {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    font-size: 0.8rem;
+  }
+
+  #tableUsuarios th,
+  #tableUsuarios td {
+    padding: 0.25rem;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #containerForm {
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  #listaUsuarios {
+    margin-top: 1.5rem;
+    width: 90%;
+  }
+
+  #tableUsuarios {
+    width: 100%;
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+
+  #tableUsuarios th,
+  #tableUsuarios td {
+    padding: 0.4rem;
+  }
+
+  .btnPrimario,
+  .btnSecundario,
+  .btnTerciario {
+    width: 100%;
+    margin-top: 0.4rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  header {
+    height: auto;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #containerForm {
+    width: 80%;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #listaUsuarios {
+    width: 80%;
+    margin-top: 1.5rem;
+  }
+
+  #tableUsuarios {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  #tableUsuarios th,
+  #tableUsuarios td {
+    padding: 0.5rem;
+  }
+
+  .btnPrimario,
+  .btnSecundario,
+  .btnTerciario {
+    width: auto;
+    padding: 0.4rem 1rem;
+    margin: 0.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+  }
+
+  .btnPrimario,
+  .btnSecundario,
+  .btnTerciario {
+    width: 90%;
+    margin: 0.3rem 0.5rem;
+  }
+}
