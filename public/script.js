@@ -26,8 +26,10 @@ function listarPessoas() {
                       <td>${d.idade}</td>
                       <td>${d.data_criacao}</td>
                       <td>
-                        <button class="btnPrimario btnEditar"  data-id="${d.id}">Editar</button>
-                        <button class="btnTerciario btnExcluir" data-id="${d.id}">
+                        <button class="btnPrimario btnEditar"  data-id="${d.id}"
+                         aria-label="Editar usuário ${d.id}">Editar</button>
+                        <button class="btnTerciario btnExcluir" 
+                        aria-label="Excluir usuário ${d.id}" data-id="${d.id}">
                           Excluir
                         </button>
                       </td>

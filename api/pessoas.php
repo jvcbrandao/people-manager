@@ -3,6 +3,8 @@ header("Content-Type: application/json; charset=UTF-8");
 require __DIR__ . '/cors.php';
 require __DIR__ . '/config/db.php';
 
+enable_cors();
+
 $method = $_SERVER['REQUEST_METHOD'];
 $id = isset($_GET['id']) ? (int) $_GET['id'] : null;
 $data = json_decode(file_get_contents('php://input'), true);

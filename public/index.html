@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta
+      name="description"
+      content="Sistema CRUD simples para gestão de pessoas. Desenvolvido para desafio técnico."
+    />
+    <meta name="author" content="João Vitor Brandão" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <title>People Manager</title>
   </head>
@@ -12,43 +17,39 @@
       <h1>People Manager</h1>
       <h2>Sistema de gestão de pessoas (CRUD)</h2>
     </header>
-    <main>
- <fieldset id="containerForm">
-  <legend>Cadastre um novo usuário</legend>
 
-  <form id="cadastrarUsuario">
-    
-    <div class="inputContainer">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required />
-    </div>
+    <main role="main">
+      <fieldset id="containerForm">
+        <legend>Cadastro de Usuário</legend>
 
-    <div class="inputContainer">
-      <label for="cpf">CPF:</label>
-      <input type="text" id="cpf" name="cpf" maxlength="11" required />
-    </div>
+        <form id="cadastrarUsuario">
+          <div class="inputContainer">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
 
-    <div class="inputContainer">
-      <label for="idade">Idade:</label>
-      <input type="number" id="idade" name="idade" min="0" required />
-    </div>
+          <div class="inputContainer">
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" maxlength="11" required />
+          </div>
 
-  <div class="buttonContainer">
-    <button type="submit" id="salvarInfo" class="btnPrimario">Salvar</button>
-    <button type="reset" class="btnSecundario">Limpar</button>
-  </div>
-  </form>
+          <div class="inputContainer">
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="0" required />
+          </div>
 
-  <div id="messageContainer"></div>
-</fieldset>
+          <div class="buttonContainer">
+            <button type="submit" id="salvarInfo" class="btnPrimario">
+              Salvar
+            </button>
+            <button type="reset" class="btnSecundario">Limpar</button>
+          </div>
+        </form>
 
-<!-- <div class="buscaCpfContainer">
-    <label for="buscaCpf">Buscar por CPF:</label>
-    <input type="text" name="buscaCpf" id="buscaCpf" class="inputBuscaCpf" placeholder="Digite o CPF sem pontos ou traços">
-    <button id="pesquisarCpf" class="btnPrimario">Filtrar</button>
-</div> -->
+        <div id="messageContainer"></div>
+      </fieldset>
 
-      <div id="listaUsuarios">
+      <section id="listaUsuarios">
         <table id="tableUsuarios">
           <thead>
             <tr>
@@ -59,16 +60,22 @@
               <th>Criado em</th>
               <th>Ações</th>
             </tr>
-            <tbody id="bodyTable">
-            </tbody>
           </thead>
+          <tbody id="bodyTable"></tbody>
         </table>
-      </div>
+    </section>
     </main>
-    <footer>
-      <p>Desenvolvido por João Vitor Brandão</p>
+
+    <footer  role="contentinfo">
+      <p>Desenvolvido por <strong>João Vitor Brandão</strong> • 2025</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
+
+<!-- <div class="buscaCpfContainer">
+    <label for="buscaCpf">Buscar por CPF:</label>
+    <input type="text" name="buscaCpf" id="buscaCpf" class="inputBuscaCpf" placeholder="Digite o CPF sem pontos ou traços">
+    <button id="pesquisarCpf" class="btnPrimario">Filtrar</button>
+</div> -->

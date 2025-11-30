@@ -46,11 +46,18 @@ h2 {
 }
 
 footer {
-  height: 9vh;
   background-color: #2e3846;
   color: #fff;
-  line-height: 9vh;
-  text-align: end;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  border-top: 2px solid #1f2937;
+}
+
+footer p {
+  opacity: 0.9;
+  letter-spacing: 0.5px;
 }
 
 .inputContainer {
@@ -104,20 +111,26 @@ footer {
   color: #fff;
 }
 
+.btnPrimario:hover {
+  background-color: #0b6dcc;
+}
+
+.btnSecundario:hover {
+  background-color: #f3f3f3;
+}
+
+.btnTerciario:hover {
+  background-color: #a63f3f;
+}
+
 #messageContainer {
   margin-top: 0.75rem;
   min-height: 1.5rem;
   font-size: 0.9rem;
 }
 
-#tableUsuarios {
-  border-collapse: collapse;
-  text-align: center;
-  width: 60%;
-  margin: auto;
-  border-color: #2e3846;
-  background-color: #fff;
-}
+
+
 tr {
   border: solid 1px #2e3846;
   height: 3rem;
@@ -160,3 +173,18 @@ tr {
 .buscaCpfContainer > button {
   align-items: end;
 }
+
+#tableUsuarios {
+  border-collapse: collapse;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  border-color: #ccc;
+  background-color: #fff;
+}
+
+#tableUsuarios:nth-child(even){
+  background-color: #ccc;
+}
+
+
