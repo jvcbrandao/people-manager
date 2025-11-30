@@ -10,9 +10,7 @@ header {
   text-align: center;
   color: #fff;
   background-color: #2e3846;
-  height: 20vh;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
 }
 
 main {
@@ -80,11 +78,7 @@ footer p {
   border-radius: 0.4rem;
 }
 
-#cadastrarUsuario .inputContainer:last-child {
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 0.5rem;
-}
+
 
 .btnPrimario,
 .btnSecundario,
@@ -182,8 +176,13 @@ tr {
   background-color: #fff;
 }
 
-#tableUsuarios:nth-child(even) {
-  background-color: #ccc;
+#tableUsuarios tr:nth-child(even), thead {
+  background-color:#2e3846;
+  color: white;
+}
+
+td{
+  padding-left: 1rem;
 }
 
 @media (max-width: 480px) {
