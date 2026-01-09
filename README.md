@@ -175,7 +175,6 @@ Este projeto cumpre todos os requisitos do teste, incluindo:
 - Script SQL para inicialização do banco
 - Atualmente está sendo implementada uma esteira de CI/CD utilizando GitHub Actions.
 
------------------------------------------------------------
-👨‍💻 Desenvolvedor
+👨‍💻 Desenvolvedor Júnior
 João Vitor Carlos Brandão – 2025
 
