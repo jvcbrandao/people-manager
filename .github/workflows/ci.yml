@@ -25,6 +25,6 @@ jobs:
       run: |
         set -e
         echo "Checking PHP files..."
-        for file in $(find . -type f -name "*.php") do
+        for file in $(find . -type f -name "*.php"); do
           php -l "$file"
         done
