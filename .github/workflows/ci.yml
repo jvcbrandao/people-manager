@@ -7,5 +7,16 @@ jobs:
   example_job:
     runs-on: ubuntu-latest
     steps:
-    - name: Say hello
-      run: echo "CI funcionando"
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+
+    - name: Show PHP version
+      run: php -v
+      
+    - name: List project files
+      run: ls -la
