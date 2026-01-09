@@ -20,3 +20,11 @@ jobs:
       
     - name: List project files
       run: ls -la
+
+    - name: PHP syntax check
+      run: |
+        set -e
+        echo "Checking PHP files..."
+        for file in $(find . -type f -name "*.php") do
+          php -l "$file"
+        done
