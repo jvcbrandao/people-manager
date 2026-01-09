@@ -146,13 +146,3 @@ function editarUsuario(id, botao) {
   }
 
 }
-
-// const pesquisarCpf = document.getElementById('pesquisarCPF');
-// pesquisarCpf.addEventListener('click', pesquisarCpf)
-
-// function pesquisarCpf(){
-
-// cpf = pesquisarCpf.value;
-
-
-// }

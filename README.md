@@ -173,6 +173,7 @@ Este projeto cumpre todos os requisitos do teste, incluindo:
 - Tabela dinâmica
 - Design responsivo
 - Script SQL para inicialização do banco
+- Atualmente está sendo implementada uma esteira de CI/CD utilizando GitHub Actions.
 
 -----------------------------------------------------------
 👨‍💻 Desenvolvedor
